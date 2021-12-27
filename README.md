@@ -4,13 +4,13 @@ A Java Spring Boot (Backend) + Vaadin (Frontend) based web application to calcul
 
 ### API / URL Information
 - **Web Application** -> http://localhost:8080/ui/
-- **HTTP GET API** -> http://localhost:8080/api/v1/pi
-- **HTTP API Documentation** -> http://localhost:8080/swagger-ui
+- **REST GET API** -> http://localhost:8080/api/v1/pi
+- **REST API Documentation** -> http://localhost:8080/swagger-ui
 
 ### Steps to Run Application
-- Install [Java 11 or later]( https://adoptopenjdk.net/releases.html )
+- Install Java 11 or later. Link to download https://adoptopenjdk.net/releases.html
 - Set JAVA_HOME once Java is installed. Instructions can be found https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux
-- Install [NodeJS]( https://nodejs.org/en/ )
+- Install NodeJS LTS or Stable version. Link to download https://nodejs.org/en/
 - Run the following command to start the application
 
   **For Windows**
@@ -22,6 +22,7 @@ A Java Spring Boot (Backend) + Vaadin (Frontend) based web application to calcul
   ```
   ./mvnw spring-boot:run 
   ```
+- You may access to http://localhost:8080/ui/ once this `Started webpack-dev-server.` keyword shown in console.
 
 ### Limitations
 - Server is now only calculating Pi with the N-th digit configured before starting up (default is 1000 digits with 999 decimal precisions).
